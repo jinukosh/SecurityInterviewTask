@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  img.image(src='https://mcusercontent.com/917bb33189f0077b580a3e709/images/db944f9e-82b5-44cc-828e-7cc3bb8d5100.png' )
+      
+  p Security Engineer Hands-on task - Node.js[Express] and MongoDB
+
+  // Wrapper
+  #wrapper
+
+    // MY INFO
+    #userInfo
+      h2 My Info
+      p
+        strong Name:
+        |  <span id='myInfoName'></span>
+        br
+        strong Age:
+        |  <span id='myInfoAge'></span>
+        br
+        strong Credit Card:
+        |  <span id='myInfoCard'></span>
+        br
+        strong Location:
+        |  <span id='myInfoLocation'></span>
+    // /MY INFO
+    
+    
+    // USER LOGIN
+    h2 Login
+    #login 
+      .userList
+        fieldset
+          input#loginUserName(type='text', placeholder='Username')
+          input#loginPassword(type='text', placeholder='Password')
+          br
+          button#btnLogin Login
+          button#btnLogout Logout
+      // /USER LOGIN
+
+    // MODIFY USER INFO
+    #modifyList
+      h2 Modify My Info
+      .userList
+        fieldset
+          input#modifyPassword(type='text', placeholder='Password')
+          input#modifyUserEmail(type='text', placeholder='Email')
+          br
+          input#modifyUserFullname(type='text', placeholder='Full Name')
+          input#modifyUserAge(type='text', placeholder='Age')
+          br
+          input#modifyUserLocation(type='text', placeholder='Location')
+          input#modifyUserCard(type='text', placeholder='Credit Card')
+          br
+          button#btnModify Modify
+    // /MODIFY USER INFO
+
+  // /WRAPPER
